@@ -2,16 +2,39 @@
 <html>
 	<head>
 	<title>Form wk7 Lab</title>
-	<link rel="stylesheet" href="style/style.css"/>
+	<!--<link rel="stylesheet" href="style/style.css"/>-->
 	</head>
 	<body>
-		<form>
+		<ul class="nav nav-pills nav-fill">
+			<li class="nav-item">
+				<a class="nav-link" href="../index.html">Summary</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="../coverLetter/index.html">Cover Letter</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="../education/index.html">Education</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="../skills/index.html">Skills</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="../experience/index.html">Experience</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="../wk7/index.html">wk7 Lab</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="#">wk8 Game</a>
+			</li>
+		</ul>
+		<form onsubmit="output()" id="hideForm">
 			<!--Asking user to input name and email-->
-			<p id="name">Name:<input type="text" /></p>
+			Name:<input type="text" id="formName"/>
 			<br/>
-			<p id="email">Email:<input type="email" /></p>
+			Email:<input type="email" id="formEmail"/>
 			<br/>
-			<input id="hide" type="submit" onclick="output()"/>
+			<input type="submit" />
 			<br/>
 		</form>
 		<!--[insert user name], thank you for your details. We will be in touch via [insert user email] shortly-->
