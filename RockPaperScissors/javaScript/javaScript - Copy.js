@@ -1,17 +1,16 @@
 //Rock Paper Scissors javaScript file with for loop
-function game(){
+//function game(){
 	for(i=0;i<=2;i=i+1){
-//		if(i<3){ 
-		while(i<=2){
+		if(i==0 || i==1 || i==2){ 
 			result();
-//		}
+		}
 		//console.log("Test");
-//		else{
-//			document.getElementById("TryAgain").innerHTML="You have had three tries. Game Over.";
-//			document.getElementById("RPS").style.display = "none";
+		else{
+			document.getElementById("TryAgain").innerHTML="You have had three tries. Game Over.";
+			document.getElementById("RPS").style.display = "none";
 		}
 	}
-}	
+//}	
 function result(outcome){
 //tried for loop on so many lines and couldnt get it to stop looping
 
@@ -66,6 +65,4 @@ function result(outcome){
 	if(msg=="You Win! Well Done!"){	
 		document.getElementById("RPS").style.display = "none";
 	}
-	
-	
 }

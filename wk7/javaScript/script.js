@@ -1,3 +1,4 @@
+//wk7 javaScript File
 function output(){
 	<!--stop page from refreshing-->
 	event.preventDefault();
